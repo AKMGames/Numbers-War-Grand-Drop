@@ -113,6 +113,19 @@ Five tickets exist in the Grand Drop universe:
 
 The higher the ticket the harder it is to earn. And the more valuable it becomes on the marketplace.
 
+ - Important functions
+
+**BuyNormalTicket:** Simple and transparent.
+- Player spends 100 GRAND goes straight into the match pool inside **GrandDrop**, No middleman. No platform fee. You know exactly where every GRAND goes the moment you buy.
+
+**GameMint:** This is how reward tickets are born.
+- Only Contracts can call this function nobody else. When a player earns a reward at the end of a match, **GrandDrop** calls GameMint and the ticket appears in their wallet. No buying. No shortcuts. You earn it or you don't
+
+**ListTicket:** This is where the player economy comes alive.
+- Earned a Gold ticket but don't need the discount right now? **List it**. Set your price in **GRAND**, and the ticket goes into escrow inside the contract safe, locked, and visible to every player on the **marketplace**.
+
+
+
   
 
 
