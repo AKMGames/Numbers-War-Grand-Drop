@@ -1,4 +1,4 @@
-# Numbers-War-Grand-Drop
+# Numbers War: Grand Drop
 A trustless competitive gaming economy built on Avalanche.  Transparent match results, on-chain player identity,  and a skill-based reward system.
 
 ---
@@ -55,8 +55,14 @@ Utility: Unlike normal tickets, these can be listed for sale on the marketplace 
 ## 💰 Earning & Cashing Out
 Players profit by being skilled enough to keep their collected Grands or by farming mission-based tickets to sell to other players.
 
-. Grands can be sold back to the GrandToken Contract.
+* Grands can be sold back to the GrandToken Contract.
 
-. Specific restrictions apply to these withdrawals to maintain economic balance (detailed in the Smart Contracts section).
+* Specific restrictions apply to these withdrawals to maintain economic balance (detailed in the Smart Contracts section).
 
+
+## 🔺 On-Chain
+The speed and low gas fees made this entire experience possible. Session creation, claims, ticket trades, profile updates  all happening on-chain without making players wait or pay a fortune. Building a real-time competitive game on blockchain only works when the infrastructure doesn't get in the way. Avalanche doesn't. 🔥⚡
+
+The entire economy of Grand Drop runs on three smart contracts **GrandToken**, **GrandTicket**, and **GrandDrop**. Each one has a specific responsibility, and together they form a complete, trustless system.
+Let's walk through each contract and break down the most important functions — what they do, why they exist, and how they protect the player.
 
