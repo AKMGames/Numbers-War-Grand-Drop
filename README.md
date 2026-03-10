@@ -150,7 +150,37 @@ Every player interaction that matters happens here. Every GRAND won in a match f
 - Normal ticket holders already pre-paid their pool value at BuyNormalTicket nothing extra pulled from them.
 - Reward ticket holders pay their discounted amount directly Bronze pays 90, Silver pays 50, Gold pays 25, Platinum pays nothing
 - The pool is locked. The match starts. The contract is now holding every GRAND that will drop from that plane.
-- Only Admin can call this function. And Admin cannot play. The separation is absolute. 
+- Only Admin can call this function. And Admin cannot play. The separation is absolute.
+
+**Claim:** This is the most important function in the entire system.
+- Match ends. Server calculates everything how many Grands you collected, how many kills, how many deaths. Then it signs that result cryptographically and sends it to the player.
+- Player submits that signature to the contract. The contract verifies it  was this actually signed by Admin? Is the nonce correct? Does this player have an active session? Is the profile real?
+- Every check passes **GRAND** is transferred instantly. Profile stats updated permanently. Reward ticket minted if earned.
+- Every check fails transaction rejected. No result can be faked. No amount can be inflated. No kill count can be manipulated.
+- The nonce is critical here it's a unique number that increments after every claim. The same signature can never be used twice. Ever.
+
+**AbandonSession:** Not every player finishes what they started.
+- If a player disconnects, rage quits, or simply leaves mid match they call **AbandonSession**. Or the server detects it and handles it.
+- The punishment is immediate the player is banned for a set duration. No rejoining, no claiming, no new sessions until the ban expires. The longer the ban duration, the more it hurts to quit.
+- Their share of the pool doesn't disappear though. It stays locked in the session. When the match ends and the session finalizes any unclaimed **GRAND** goes to Dev to cover server costs. Nothing is wasted.
+- Quitting has consequences. Staying and fighting has rewards. That's how you keep players honest.
+
+**SellGrands:** This is where skill becomes real money.
+- Accumulated enough **GRAND** from winning matches? Sell it back to the contract for **AVAX**. But not just anyone can sell the system is designed to protect the economy from exploitation.
+- Three gates to pass:
+   - **First:** match history. You need at least **10 matches** played before you can sell anything. The more matches you've played, the more you can sell per transaction. Casual players have limits. Veterans have more freedom.
+   - **Second:** minimum balance. You can never sell everything. A minimum amount must stay in your wallet you're a player, not a bank.
+   - **Third** cooldown. **Three days** between every sell. No farming, no dumping, no exploiting the reserve.
+- Pass all three **GRAND** goes back to the contract, **AVAX** comes to you. Small fees split to Admin and Dev to cover running costs. The rest is yours. Earned through skill. Protected by rules. Paid in **AVAX**."
+
+**SweepSessions:** The cleanup crew.
+- Sometimes sessions don't finalize cleanly all players abandon, nobody claims, the match just dies. These ghost sessions would sit on-chain forever, locking **GRAND** inside them with no way out. SweepSessions solves that.
+- **Admin** calls this function periodically. It scans every active session and checks one thing has it been more than **24 hours** since it was created? If yes it's dead. Leftover **GRAND** goes to **GrandToken**, One function. Keeps everything clean. Keeps the economy moving.
+
+
+## One last thing I want to be transparent about:
+*Before this jam, I had zero knowledge of Solidity. Zero experience writing smart contracts. It may not be perfect. There may be edge cases I didn't catch, optimizations I missed, or patterns a seasoned Solidity developer would do differently. I know that. And I own it.*
+*And none of this would have been possible without **Avalanche**. The speed, the low gas fees, the developer ecosystem everything just worked. Avalanche didn't get in the way of the vision. It enabled it. Thank you. 🙏*
 
 
 
