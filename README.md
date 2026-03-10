@@ -113,7 +113,7 @@ Five tickets exist in the Grand Drop universe:
 
 The higher the ticket the harder it is to earn. And the more valuable it becomes on the marketplace.
 
- - Important functions
+ - Important functions:
 
 **BuyNormalTicket:** Simple and transparent.
 - Player spends 100 GRAND goes straight into the match pool inside **GrandDrop**, No middleman. No platform fee. You know exactly where every GRAND goes the moment you buy.
@@ -123,6 +123,35 @@ The higher the ticket the harder it is to earn. And the more valuable it becomes
 
 **ListTicket:** This is where the player economy comes alive.
 - Earned a Gold ticket but don't need the discount right now? **List it**. Set your price in **GRAND**, and the ticket goes into escrow inside the contract safe, locked, and visible to every player on the **marketplace**.
+
+**BuyTicket:** The other side of the marketplace.
+- See a Gold ticket listed for a good price? Buy it. **GRAND** goes straight to the seller, ticket comes straight to you. No waiting, no approval, no middleman.
+  
+# GrandDrop (my favourite)
+Address: [0xcC749aA09217E82269C2E192aA41a3d359677413](https://testnet.snowtrace.io/address/0xcC749aA09217E82269C2E192aA41a3d359677413/contract/43113/code) | Avalanche Fuji Testnet
+
+This is where everything comes together. **GrandToken** handles the currency. **GrandTicket** handles the entry. **GrandDrop** handles everything else, player profiles, match sessions, result verification, prize distribution, and the sell economy.
+Every player interaction that matters happens here. Every GRAND won in a match flows through here. Every match result is verified here.
+**Three roles keep the system in balance:**
+- **The Owner:** deploys the contract, sets the admin, nothing else.
+- **The Admin:** the server wallet. Creates sessions, signs match results, cannot be a player, cannot hold **GRAND**
+- The Player everyone else. Competes, earns, trades, cashes out.
+  No role can cross into another. The contract enforces every boundary. This is the contract that makes Grand Drop trustless.
+
+- Top functions:
+
+**CreateProfile:** Before anything else you need an identity.
+- CreateProfile is the first transaction every player makes. Choose a username, confirm it on-chain, and from that moment you exist in the Grand Drop universe permanently.
+- But there are rules. **Owner** cannot create a profile. **Admin** cannot create a profile. This keeps the people running the system completely separate from the people playing it. No insider advantage. No hidden accounts.
+
+**CreateSession:** This is where a match becomes real.
+- When the server finds a full lobby, it calls CreateSession on-chain. Player addresses, their ticket types, the session ID all recorded on Avalanche in one transaction.
+- The moment this function runs: Every ticket is burned — no going back.Every player's pool contribution is calculated and locked. The session is live on-chain.
+- Normal ticket holders already pre-paid their pool value at BuyNormalTicket nothing extra pulled from them.
+- Reward ticket holders pay their discounted amount directly Bronze pays 90, Silver pays 50, Gold pays 25, Platinum pays nothing
+- The pool is locked. The match starts. The contract is now holding every GRAND that will drop from that plane.
+- Only Admin can call this function. And Admin cannot play. The separation is absolute. 
+
 
 
 
