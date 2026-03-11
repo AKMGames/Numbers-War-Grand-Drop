@@ -59,6 +59,33 @@ Players profit by being skilled enough to keep their collected Grands or by farm
 
 * Specific restrictions apply to these withdrawals to maintain economic balance (detailed in the Smart Contracts section).
 
+## Greate Account:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NDYzLmdpZg==/original/TxERn8.gif">
+
+## Buy Grands:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NTc4LmdpZg==/original/J%2F6K1k.gif">
+
+## Buy Tickets:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NTkwLmdpZg==/original/MBQ5vP.gif">
+
+## Join Game:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NjgwLmdpZg==/original/I9jCgx.gif">
+
+## Collect Grands & Weapons:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NjgzLmdpZg==/original/erbL0z.gif">
+
+## Claim:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NzE0LmdpZg==/original/dRuZDo.gif">
+
+## List Tickets:
+
+<img src="https://img.itch.zone/aW1nLzI2MDY4NzI3LmdpZg==/original/%2BUAD7%2F.gif">
 
 ## 🔺 On-Chain
 The speed and low gas fees made this entire experience possible. Session creation, claims, ticket trades, profile updates  all happening on-chain without making players wait or pay a fortune. Building a real-time competitive game on blockchain only works when the infrastructure doesn't get in the way. Avalanche doesn't. 🔥⚡
