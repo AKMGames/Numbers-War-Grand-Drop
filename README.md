@@ -8,6 +8,10 @@ multiplayer game and the newest member of the Numbers War family.
 > [!IMPORTANT]
 > You can play the game with friends Here [Numbers War: Grand Drop](https://khalilakm.itch.io/numbers-war-grand-drop-prototype), if the page is protected with a password just type: GrandDrop2026#
 
+> [!CAUTION]
+> The game uses [Edgegap](https://edgegap.com/) free plane for hosting the dedicated server, Free plane gives a Matchmaker that lasts 1 hour and then shuts down, i need to reactivate it manually to get a new 1 hour, i'm afraid you test the game while the mathchmaker is not live, i'll try my best to update it evey hour, i'm really sorry, i'cant aford to buy a plan, please if you face any network problem during joining the session please contact me so i can activate the mathchmaker or any Avalanche support reach me so i can reactivate the mathchmaker, i'm really sorry.
+> telegram & Discord: khalilakm  | email: hammoudakhalil5585@gmail.com
+
 ---
 ## Gameplay Overview
 *Numbers War: Grand Drop isn't just a game—it’s a solution to the "Broken Economy" problem in Web3. While others focus on just playing, we focus on problem-solving through skill-based mechanics.*
