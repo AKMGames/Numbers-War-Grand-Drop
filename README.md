@@ -12,9 +12,12 @@ multiplayer game and the newest member of the Numbers War family.
 > [!IMPORTANT]
 > You can play the game with friends Here [Numbers War: Grand Drop](https://khalilakm.itch.io/numbers-war-grand-drop-prototype), if the page is protected with a password just type: **GrandDrop2026#**
 > 
-> You can test most of **Web3** features without joining any multiplayer game **(Create Account, Buy Grands, Buy Normal Tickets, Change Username)**
+> You can test most of **Web3** features without joining any multiplayer game **(Create Account, Buy Grands, Buy Normal Tickets,Buy Listed Tickets, Change Username)**
 > If you want to test all **Web3** features you need to join a multiplayer game with **4 players**, the dedicated server will send you a nonce that you need to sign it using your wallet, and you send back the signature with your public key to
 > verify it's you who's joining with this accout,you will also send the **TicketID** you will join with, after that, the dedicated server will grab your profile data and check if you account **exists**, you're not in an **open session**, you're not **banned**, you have the **ticket** you want to join with, if everything is ok you'll be authenticated, if not you'll get **kicked** sending the reason.
+>
+> After the game ends, the server will send you the **Claim** signature that you'll use to update your profile (Grands, Kills, Deaths, Rewareded tickets...), you can chose if you want to **Claim** or **Abandon**, if you **Abandon**
+you'll get banned for **10 minutes**, if you claim and got rewarded tickets, now you can set them for sale on the **Marketplace**
 
 > [!CAUTION]
 > The game uses [Edgegap](https://edgegap.com/) free plan for hosting the dedicated server, Free plan gives a Matchmaker that lasts 1 hour and then shuts down, i need to reactivate it manually to get a new 1 hour, i'm afraid you test the game while the mathchmaker is not live, i'll try my best to update it evey hour, i'm really sorry, i'cant aford to buy a plan, please if you face any network problem during joining the session please contact me so i can activate the mathchmaker or any Avalanche support reachs me so i can reactivate the mathchmaker, i'm really sorry.
