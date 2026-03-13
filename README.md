@@ -6,7 +6,7 @@ A trustless competitive gaming economy built on Avalanche.  Transparent match re
 ### [Watch Avalanche Stage 2 MVP Video 📼](https://youtu.be/dHpsUiQfLpc)
 
 ---
-Welcome to Numbers War: Grand Drop a competitive Web3 
+Welcome to **Numbers War: Grand Drop** a competitive Web3 
 multiplayer game and the newest member of the Numbers War family.
 
 > [!IMPORTANT]
